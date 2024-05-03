@@ -40,7 +40,8 @@ def states_id(id):
             '9-states.html',
             state_id=state_id,
             condition="state_id")
-    except:
+    except Exception:
+
         return render_template('9-states.html', condition="not_found")
 
 
